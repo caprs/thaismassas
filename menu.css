@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Montserrat:wght@526&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@526&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@526&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@526&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@526&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* Estilo Geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 50px;
+}
+
+.navbar .logo {
+    position: absolute;
+    left: 3rem;
+    color: #333;
+    text-transform: uppercase;
+    font-family: "Barrio", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    display: flex;
+    gap: 0.2rem;
+}
+
+/* Animação de pulo */
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.navbar .logo span {
+    display: inline-block;
+    animation: jump 0.5s ease infinite;
+}
+
+/* Delay para que as letras pulem separadamente */
+.navbar .logo span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.navbar .logo span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.navbar .logo span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.navbar .logo span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.navbar .logo span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.navbar .logo span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.navbar .logo span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto; 
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #e1938a;
+}
+
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* Garante que a lista se alinhe à direita */
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #e1938a;
+}
+
+
+#banner_section {
+    width: 100%;
+    height: 100vh;
+    background: url('img/tc massas (1920 x 1080 px).png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+}
+
+#banner_section h1 {
+    font-family: "STIX Two Text", serif;
+    letter-spacing: 5px;
+    color: black;
+    font-size: 3rem;
+    font-weight: 300;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Definição da animação */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Seção de Pratos */
+#pratos {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fff;
+}
+
+#pratos h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+/* Container de Cardápio */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    padding: 0 1rem;
+}
+
+/* Cartões de Cardápio */
+.menu-card {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+}
+
+.menu-card img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+.menu-footer {
+    background-color: #ba3d2f;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Seção de Destaque dos Pratos */
+#pratos-destaque {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #ba3d2f;
+}
+
+#pratos-destaque h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: black;
+}
+
+/* Container dos Cards */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    padding: 0 1rem;
+}
+
+/* Estilo dos Cards */
+.card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    font-size: 1.4rem;
+    color: #ba3d2f;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.5;
+}
+
+/* Hover Effects */
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#fazer-pedido {
+    background-color:#e76f51;
+    color:black;
+    text-align: center;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+}
+
+#fazer-pedido .pedido-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#fazer-pedido h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#fazer-pedido p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-pedido {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color:transparent;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.btn-pedido:hover {
+    background-color: rgb(235, 153, 98);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-pedido:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsividade para Dispositivos Menores */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 1rem;
+        justify-content: center; /* Centraliza o conteúdo */
+    }
+
+    .navbar .logo {
+        font-size: 18px;
+        text-align: center; /* Centraliza o logo */
+        width: 100%; /* Garante que o logo ocupe toda a largura disponível */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .navbar ul li {
+        margin: 0.5rem 0;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+    }
+
+
+    #pratos h2,
+    #pratos-destaque h2 {
+        font-size: 1.6rem;
+    }
+
+    .menu-container,
+    .cards-container {
+        gap: 1rem;
+    }
+
+    .card-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-content p {
+        font-size: 1rem;
+    }
+
+    #banner_section h1{
+        font-family: "STIX Two Text", serif;
+        letter-spacing: 5px;
+        color: black;
+        font-size: 3rem;
+        font-weight: 300;
+        opacity: 0;
+        transform: translateY(-20px);
+        animation: fadeInUp 1s ease-out forwards;
+    
+
+    }
+}
