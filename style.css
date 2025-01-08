@@ -618,4 +618,10 @@ hr {
     #funcionamento .image-container{
         width: 100px;
     }
+
+    .footer-section p{
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+    }
 }
