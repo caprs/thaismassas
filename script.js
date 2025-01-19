@@ -10,3 +10,14 @@ window.onload = function() {
         logoText.appendChild(span);
     }
 };
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    // Adicionar o evento de clique no botão
+    menuToggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+});

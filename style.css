@@ -20,6 +20,9 @@ body {
     color: #333;
 }
 
+.hidden{
+    display: none;
+}
 .navbar {
     display: flex;
     justify-content: center;
@@ -95,9 +98,15 @@ body {
 
 
 .navbar ul {
-    display: flex;
-    list-style: none;
-    margin-left: auto; 
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   gap: 15px;
+}
+
+.navbar ul .hidden{
+    display: none;
 }
 
 .navbar ul li {
@@ -124,10 +133,12 @@ body {
     position: absolute;
     right: 2rem;
 }
+
+
 #banner_section {
     width: 100%;
     height: 100vh;
-    background: url('img/tc\ massas\ \(1920\ x\ 1080\ px\).png') no-repeat center center/cover;
+    background: url('imagens/tc\ massas\ \(1920\ x\ 1080\ px\).png') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -543,20 +554,28 @@ hr {
 
 @media (max-width: 768px) {
     .navbar ul {
-        display: none; 
-        width: 100%;
+        display: none;
         flex-direction: column;
+        gap: 10px;
         position: absolute;
         top: 80px;
-        left: 0;
-        background-color: #fff;
+        right: 2rem;
+        background-color: white;
+        padding: 1rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 1rem 0;
-        text-align: center;
+        border-radius: 5px;
     }
 
     .navbar ul li {
         margin: 1rem 0;
+    }
+
+    .navbar ul.hidden{
+        display: none;
+    }
+
+    .navbar ul:not(.hidden){
+        display: flex;
     }
 
     .menu-toggle {

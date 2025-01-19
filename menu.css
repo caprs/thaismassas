@@ -25,7 +25,7 @@ a{
     position: sticky;
     top: 0;
     z-index: 1000;
-    height: 50px;
+    height: 80px;
 }
 
 .navbar .logo {
@@ -112,33 +112,10 @@ a{
 }
 
 
-.navbar ul {
-    display: flex;
-    list-style: none;
-    margin-left: auto; /* Garante que a lista se alinhe à direita */
-}
-
-.navbar ul li {
-    margin: 0 1rem;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s;
-    font-size: 16px;
-}
-
-.navbar ul li a:hover {
-    color: #e1938a;
-}
-
-
 #banner_section {
     width: 100%;
     height: 100vh;
-    background: url('img/tc massas (1920 x 1080 px).png') no-repeat center center/cover;
+    background: url('imagens/tc\ massas\ \(1920\ x\ 1080\ px\).png') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
